@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --line-fill: hsl(245, 75%, 52%);
+    --line-empty: hsl(223, 47%, 23%);
+    --line-blank: hsl(225, 100%, 94%);
+    --line-back: hsl(224, 23%, 55%);
+    --line-full: hsl(229, 100%, 98%);
+}
+body {
+    background-color: var(--line-blank);
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+.pattern-background {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.flexcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+p {
+    color: var(--line-back);
+}
+.card-holder {
+    width: 375px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.illustration-hero {
+    background-image: url(../images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    height: 13.8rem;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.advert-holder {
+    background-color: #fff;
+    padding: 0 1.5rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.order-summary {
+    padding-top: 0.8rem;
+}
+.order-summary h2, article h4{
+    color: var(--line-empty);
+}
+.annual-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+    background-color: var(--line-full);
+    padding: 12px;
+    border-radius: 10px;
+}
+.svg-icon {
+    display: flex;
+}
+article img {
+    margin-right: 0.2rem;
+}
+button {
+    border: none;
+    font-weight: 700;
+    background-color: #fff;
+}
+#btn {
+    font-size: 14px;
+    background-color: var(--line-full);
+}
+a {
+    color: var(--line-fill);
+}
+a:hover {
+    color: hsl(245, 55%, 58%);
+    text-decoration: none;
+
+}
+.btn {
+    margin-bottom: 20px;
+    background-color: var(--line-fill);
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0px 5px 10px var(--line-back);
+}
+.btn:hover {
+    background-color: hsl(245, 55%, 58%);
+}
+.cancel-order {
+    color: var(--line-back);
+    font-weight: 900;
+    margin-bottom: 1.7rem;
+}
+.cancel-order:hover {
+    color: var(--line-empty);
+}
